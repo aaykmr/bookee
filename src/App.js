@@ -1,23 +1,13 @@
 import logo from './logo.svg';
-import './App.css';
-
+import './style.css';
+import Tabs from './Tabs';
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <img src={"https://uploads-ssl.webflow.com/5fa518ce1bd59b3b38b3a157/60100662a332914b0b5bbea8_bookee-logo-previously-studioyou-black.svg"} className="App-logo" alt="logo" />
       </header>
+      <Tabs />
     </div>
   );
 }
