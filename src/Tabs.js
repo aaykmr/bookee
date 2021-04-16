@@ -8,16 +8,10 @@ function Tabs(){
             </div>
 
             
-            <div id="my" style={{display:"block"}} className="tabcontent">
-            <h3>London</h3>
-            <p>London is the capital city of England.</p>
-            </div>
-            <ShiftWrap tab={"my"}/>
-            <ShiftWrap tab={"available"} />
-            <div id="available" className="tabcontent">
-            <h3>Paris</h3>
-            <p>Paris is the capital of France.</p>
-            </div>
+            
+            <ShiftWrap tab={"my"} display={"block"}/>
+            <ShiftWrap tab={"available"} display={"none"} />
+            
             
             
         </div>
@@ -25,7 +19,7 @@ function Tabs(){
     )
 }
 
-function openTab(cityName,evt) {
+function openTab(tabName,evt) {
    
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -38,11 +32,8 @@ function openTab(cityName,evt) {
         tablinks[i].style.color = "#888888";
         
     }
-    //console.log(evt);
-    document.getElementById(cityName).style.display = "block";
-    //document.getElementsByClassName("active")[0].style.color="black";
+    document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
-    
     document.getElementsByClassName("active")[0].style.color="black";
 }
 
