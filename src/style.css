@@ -43,8 +43,31 @@
     color: #888888;
 }
 
-
-
+.shiftContainer{
+    display: flex;
+    flex-direction: column;
+}
+.shift{
+    flex: 1;
+    padding: 10px;
+    color: black;
+    font-size: 22px;
+    border-bottom: 1px solid white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #456C92;
+}
+.cancel{
+    background-color: transparent;
+    border: 1px solid #E2006A;
+    color: #E2006A;
+    font-size: 16px;
+    font-weight: 600;
+    float: right;
+    position: relative;
+    padding: 10px 30px;
+    border-radius: 40px;
+    outline: none;
+}
 
 
 

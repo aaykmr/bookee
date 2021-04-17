@@ -26,7 +26,7 @@ class App extends React.Component{
           <img src={"https://uploads-ssl.webflow.com/5fa518ce1bd59b3b38b3a157/60100662a332914b0b5bbea8_bookee-logo-previously-studioyou-black.svg"} className="App-logo" alt="logo" />
         </header>
         <br></br>
-        <Tabs />
+        <Tabs state={this.state}/>
       </div>
     );
   }

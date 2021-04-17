@@ -1,4 +1,5 @@
-import {useState} from "react"
+import {useState} from "react";
+import Shift from './Shift';
 function ShiftWrap(props){
     //console.log(props);
     /*const [data, setData] = useState('');
@@ -12,8 +13,7 @@ function ShiftWrap(props){
     
     return(
         <div id={props.tab} style={{display:props.display}} className="tabcontent">
-            <h3>{props.tab}</h3>
-            <p>London is the capital city of England.</p>
+            <Shift tab={props.tab} state={props.state}/>
         </div>
     )
 }

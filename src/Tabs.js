@@ -1,5 +1,6 @@
 import ShiftWrap from "./ShiftWrap";
-function Tabs(){
+function Tabs(props){
+    
     return(
         <div className="tabs">
             <div className="tab">
@@ -9,8 +10,8 @@ function Tabs(){
 
             
             
-            <ShiftWrap tab={"my"} display={"block"}/>
-            <ShiftWrap tab={"available"} display={"none"} />
+            <ShiftWrap tab={"my"} display={"block"} state={props}/>
+            <ShiftWrap tab={"available"} display={"none"} state={props}/>
             
             
             
