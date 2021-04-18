@@ -143,3 +143,18 @@
     border-top: none;
     border-radius: 0 0 20px 20px;
 }
+ 
+@media only screen and (max-width: 570px)
+{
+    .tabs{
+        width: 100%;
+        left:0%;
+    }
+    .area{
+        font-size: 15px;
+    }
+    .tab button{
+        font-size: 16px;
+    }
+
+}
