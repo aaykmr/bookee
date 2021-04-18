@@ -10,8 +10,8 @@ function Tabs(props){
 
             
             
-            <ShiftWrap tab={"my"} display={"block"} state={props}/>
-            <ShiftWrap tab={"available"} display={"none"} state={props}/>
+            <ShiftWrap tab={"my"} display={"block"} state={props} fetchData={props.fetchData} this={props.this}/>
+            <ShiftWrap tab={"available"} display={"none"} state={props} fetchData={props.fetchData} this={props.this}/>
             
             
             

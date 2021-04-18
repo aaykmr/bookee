@@ -1,5 +1,5 @@
 import {useState} from "react";
-import Shift from './Shift';
+import Dates from './Dates';
 function ShiftWrap(props){
     //console.log(props);
     /*const [data, setData] = useState('');
@@ -13,7 +13,7 @@ function ShiftWrap(props){
     
     return(
         <div id={props.tab} style={{display:props.display}} className="tabcontent">
-            <Shift tab={props.tab} state={props.state}/>
+            <Dates tab={props.tab} state={props.state} fetchData={props.fetchData} this={props.this}/>
         </div>
     )
 }
